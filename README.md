@@ -14,13 +14,13 @@ Regression, Boosting, Decision Trees, Support Vector Machines (SVMs), and Transf
 The South Park dataset contains data from 3950 speakers with 70896 dialogues. Building a
 classifier to identify dialogues for all the given speakers would be a difficult task with the current
 heavily imbalanced dataset, so this work uses the three main characters of the show using multiclass
-classification. This task only uses a subset of the given dataset (24553 dialogues). Also I
-present my work on the binary classifier to identify whether a dialogue was uttered by one of the
+classification. This task only uses a subset of the given dataset (24553 dialogues). Also this includes
+the binary classifier to identify whether a dialogue was uttered by one of the
 main characters: 24553 utterances, leveraging relevant language patterns from the entire dataset.
 Two systems, a multi-class, and a binary classifier, to capture predictable patterns using the machine
-learning models are included in this project. I would like to benchmark the models using contextual
-embeddings against models using traditional text feature engineering methods such as word2vec.
-I hypothesize that a classifier with contextual embeddings as input would perform better since
+learning models are included in this project. These models using contextual
+embeddings are compared against models using traditional text feature engineering methods such as word2vec.
+Hypothesis is that a classifier with contextual embeddings as input would perform better since
 it would carry information of long-term dependencies and context across the entire training corpus.
 
 The results from this work reveal that the use of sentence transformer(SBERT [1])
@@ -32,6 +32,5 @@ baseline system (SVM classifier) using word2vec text embeddings.
 ### Dataset
 In this work, the dataset that is called -South Park, and it comes with 70896 dialogues uttered
 by all the characters. It has 4 important features – ‘Season’, ‘Episode’, ‘Character’, and ‘Line’.
-In this work, I aim to do text-based speaker
-classification based on the utterances in ‘Line’ and classify a speaker as one out of the closed-set
-3950 unique speakers from ‘Character’.
+In this work, aim is to do text-based speaker classification based on the utterances in ‘Line’ and 
+classify a speaker as one out of the closed-set 3950 unique speakers from ‘Character’.

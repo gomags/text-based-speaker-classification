@@ -1,5 +1,9 @@
 # text-based-speaker-classification
 
+## Folder Structure
+- main.py: Contains the code to run all the model built in this work
+- data : contains All_Seasons.csv with all utterances and characters from the Shourt Park TV show
+
 ### Problem Statement
 
 The goal of this work is to classify speakers by identifying predictable patterns based on text dialogues

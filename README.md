@@ -1,7 +1,7 @@
 # text-based-speaker-classification
 
 ## Folder Structure
-- main.py: Contains the code to run all the model built in this work
+- main.py: Contains the code to run the binary classifier and multi classfier models built in this work
 - data : contains All_Seasons.csv with all utterances and characters from the Shourt Park TV show
 
 ### Problem Statement
@@ -10,12 +10,7 @@ The goal of this work is to classify speakers by identifying predictable pattern
 from a television show, South Park, using feature engineering techniques like Principal Component
 Analysis (PCA), Singular Values Decomposition (SVD), and machine learning algorithms like Logistic
 Regression, Boosting, Decision Trees, Support Vector Machines (SVMs), and Transfer Learning.
-Patterns are based on the usage of specific words or a combination of words and lexical features of
-speakers. Speech data (verbal cues) could play a major role in identifying speakers, but as the aim is
-to build a classifier system based on text data only, I can leverage the contextual embedding from
-a pre-trained language model. These embeddings are further engineered with feature dimensionality
-reduction techniques before employing a classifier model in order to make it computationally efficient
-and reduce the complexity of the model for text classification tasks.
+
 The South Park dataset contains data from 3950 speakers with 70896 dialogues. Building a
 classifier to identify dialogues for all the given speakers would be a difficult task with the current
 heavily imbalanced dataset, so this work uses the three main characters of the show using multiclass
